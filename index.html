@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Quiz App</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+  <link rel="stylesheet" href="main.css">
+  <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script language="javascript" src="app.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Game Console Quiz</h1>
+    <!-- Questions set-up -->
+    <div class="questions">
+      <p id="singlequestion"></p>
+      <p id="progress">(You are on question <span id="number">NUMBER</span> of <span id="total">TOTAL</span>)</p>
+      <!-- Choice options -->
+      <form>
+        <input type="radio" name="answers" id="answer0" value="0" class="radio"><span id="choice0">answer 1</span>
+        <br>
+        <input type="radio" name="answers" id="answer1" value="1" class="radio"><span id="choice1">answer 2</span>
+        <br>
+        <input type="radio" name="answers" id="answer2" value="2" class="radio"><span id="choice2">answer 3</span>
+        <br>
+        <input type="radio" name="answers" id="answer3" value="3" class="radio"><span id="choice3">answer 4</span>
+        <br>
+        <input type="submit" value="Submit Answer" class="submit">
+      </form>
+    </div>
+
+    <p id="numcorrect"></p>
+    <!-- Button set-up -->
+    <button id="startover">Try Again</button>
+  </div>
+</body>
+
+</html>
